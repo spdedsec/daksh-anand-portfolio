@@ -127,3 +127,24 @@ footer{
     padding:30px;
     background:#111827;
 }
+
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    header,
+    footer {
+        display: none;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
